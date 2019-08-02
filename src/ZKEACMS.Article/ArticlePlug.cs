@@ -68,6 +68,9 @@ namespace ZKEACMS.Article
             yield return new PermissionDescriptor(PermissionKeys.PublishArticle, "文章", "发布文章", "");
             yield return new PermissionDescriptor(PermissionKeys.ViewArticleType, "文章", "查看文章类别", "");
             yield return new PermissionDescriptor(PermissionKeys.ManageArticleType, "文章", "管理文章类别", "");
+
+            yield return new PermissionDescriptor(PermissionKeys.ManageAllArticle, "文章", "管理所有文章", "");
+            yield return new PermissionDescriptor(PermissionKeys.EditPublishedArticle, "文章", "修改已发布文章", "");
         }
 
         public override IEnumerable<WidgetTemplateEntity> WidgetServiceTypes()
